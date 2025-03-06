@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Formulario de contacto</title>
 </head>
 <body>
+
+    <form class="form-contact" id="form-contact"> 
+        <h1 title="Formulario de contacto">Formulario de contacto</h1>
+        <section class="input-group">
+            <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre *" required>
+            <input class="controls" type="number" name="Telefono" id="telefono" placeholder="Ingrese su numero de telefono *" min="0" required>
+            <input class="controls" type="email" name="Email" id="email" placeholder="Ingrese su email *" required>
+            <input class="controls" type="email" name="Email-confirm" id="email-confirm" placeholder="Confirme su email *" required>
+            <select name="moto" id="select-moto" class="moto"required>
+                <option value="">Seleccion una moto *</option>
+                <option value="Ninja">Ninja</option>
+                <option value="BMW">BMW</option>
+                <option value="Apache">Apache</option>
+            </select>
+            <textarea class="text_area" name="Descripcion" id="descripcion" placeholder="Descripcion *" minlength="10" required></textarea>
+            <p class="text1">Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+            <button class="btn" type="submit" name="Enviar" id="enviar" placeholder="Enviar" value="Enviar" onclick="validacionCorreo()">Enviar</button>
+            <p class="parrafo">El objetivo de un formulario de contacto para comprar una moto es proporcionar una plataforma fácil y directa a los posibles compradores para que puedan expresar su interés en adquirir una motocicleta. Este formulario permite a los interesados ingresar su información personal y específica sobre sus preferencias o necesidades, lo que facilita la comunicación entre el vendedor y el cliente.</p>
+        </section>
+    </form>
     
 </body>
 </html>
